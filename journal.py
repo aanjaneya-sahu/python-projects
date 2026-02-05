@@ -30,3 +30,15 @@ with open("data.txt","r") as file:
 
     print(file.read())
 
+file = open("birthday.txt","w")
+
+file.write("Happy birthday\nmay god bless you")
+
+
+file = open("birthday.txt","r")
+print(file.read())
+
+file.close()
+
+
+
