@@ -31,5 +31,33 @@ def recipe_converter():
             result=cups_to_grams(cups,conversion_rate)
 
             print("Result: {:.2f} grams".format(result))
+        
+        elif choice == "2":
+
+            tablespoons=float(input("Enter the number of tablespoons: "))
+
+            result = tablespoons_teaspoons(tablespoons)
+
+            print("Result: {:.2f} teaspoons".format(result))
+
+        elif choice == "3":
+
+            grams=float(input("Enter the number of grams: "))
+
+            conversion_rate=float(input("Enter the grams per cup for the ingredient: "))
+
+            result=grams_cups(grams,conversion_rate)
+
+            print("Result: {:.2f} cups".format(result))
+
+        elif choice == "4":
+
+            print("Thank you for using recipe converter, goodbye.")
+
+            break
+
+        else:
+            print("Invalid choice, please try again")
+
 
 recipe_converter()
